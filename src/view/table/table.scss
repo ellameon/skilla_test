@@ -1,5 +1,6 @@
 .table-root {
-
+  display: flex;
+  flex-flow: column;
 }
 
 .table-content {
@@ -20,7 +21,7 @@
 
 
   span {
-
+    margin-left: 8px;
     font-family: SF Pro Display, sans-serif;
     font-size: 12px;
     font-weight: 400;

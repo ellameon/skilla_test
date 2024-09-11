@@ -1,0 +1,40 @@
+.call-record-root {
+  width: 352px;
+  height: 48px;
+  border-radius: 48px;
+  background: #EAF0FA;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 18px;
+}
+
+.call-record-icon-play {
+  height: 24px;
+  cursor: pointer;
+}
+
+.call-record-timeline {
+  width: 164px;
+  height: 4px;
+  border-radius: 50px;
+  cursor: pointer;
+  background: #ADBFDF;
+}
+
+.call-record-icon {
+  height: 24px;
+  cursor: pointer;
+
+  svg {
+    path {
+      fill: #ADBFDF;
+    }
+
+    &:hover {
+      path {
+        fill: #002CFB;
+      }
+    }
+  }
+}

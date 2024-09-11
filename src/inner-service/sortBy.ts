@@ -4,15 +4,11 @@ import React from "react";
 
 export const sortBy = (payload: ListRequest,
                            setPayload: React.Dispatch<React.SetStateAction<ListRequest>>, field: "date" | "duration") => {
-  modifyPayload("sort_by", field, setPayload, payload)
-  setTimeout(() => {
+
     if (payload.order === "ASC") {
-      console.log(111, payload)
-      modifyPayload("order", "DESC", setPayload, payload)
+      modifyPayload("order", "DESC", setPayload, payload, "sort_by", field)
     } else {
-      console.log(222, payload)
-      modifyPayload("order", "ASC", setPayload, payload)
+      modifyPayload("order", "ASC", setPayload, payload, "sort_by", field)
     }
-  }, 100)
 
 }

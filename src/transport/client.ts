@@ -11,6 +11,7 @@ const Client = (type: "list" | "callRecord") => {
       "Content-Disposition": type !== "list" ? "filename=record.mp3" : undefined,
       Authorization: `Bearer testtoken`,
     },
+    responseType: type === "list" ? "json" : "blob",
   });
 }
 

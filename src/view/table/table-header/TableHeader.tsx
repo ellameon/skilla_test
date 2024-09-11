@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { ListRequest } from "../../../types";
-import { sortBy } from "../../../inner-service";
+import { modifyPayload, sortBy } from "../../../inner-service";
 import {ReactComponent as ArrowUp} from "../../../style/assets/arrow_up.svg";
 import {ReactComponent as ArrowDown} from "../../../style/assets/arrow_down.svg";
 import "./TableHeader.scss"
@@ -24,7 +24,11 @@ export const TableHeader = (
   }: Props) => {
 
   const onChangeSort = (field: "date" | "duration") => {
-    sortBy(payload, setPayload, field)
+    if (payload.order === "ASC") {
+      modifyPayload("order", "DESC", setPayload, payload, "sort_by", field)
+    } else {
+      modifyPayload("order", "ASC", setPayload, payload, "sort_by", field)
+    }
   }
 
   const cells: Cells[] = [

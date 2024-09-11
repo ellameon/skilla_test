@@ -1,0 +1,193 @@
+.table-filters-root {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-filters-in-out-select {
+  position: relative;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  font-family: SF Pro Display, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.72px;
+  text-align: left;
+  color: #5E7793;
+}
+
+.table-filters-in-out-select-selected {
+  position: relative;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  font-family: SF Pro Display, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.72px;
+  text-align: left;
+  color: #1F46FB;
+}
+
+.table-filters-in-out-select-list {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px 0 #00000014;
+  background: white;
+  top: 34px;
+  z-index: 2;
+
+  font-family: SF Pro Display, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.72px;
+  text-align: left;
+  color: #5E7793;
+}
+
+.table-filters-dates-select-list {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px 0 #00000014;
+  background: white;
+  top: 34px;
+  right: 4px;
+  z-index: 2;
+
+  font-family: SF Pro Display, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.72px;
+  text-align: left;
+  color: #5E7793;
+}
+
+.table-filters-in-out-select-calendar {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px 0 #00000014;
+  background: white;
+  width: 400px;
+  display: flex;
+  font-family: SF Pro Display, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.72px;
+  text-align: left;
+  color: #5E7793;
+}
+
+.table-filters-in-out-select-calendar-wrapper {
+  position: absolute;
+  border-radius: 8px;
+  right: 93px;
+  box-shadow: 0 4px 20px 0 #00000014;
+  background: white;
+  z-index: 2;
+  width: 400px;
+  display: flex;
+  cursor: initial;
+}
+
+.table-filters-select-dates {
+  padding-left: 12px;
+  color: black;
+}
+
+.table-filters-in-out-select-list-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  cursor: initial;
+}
+
+.table-filters-in-out-select-item {
+  height: 32px;
+  width: 204px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  cursor: pointer;
+
+  svg {
+    margin-left: 12px;
+  }
+
+  &:hover {
+    background: #DEE4FF;
+    color: black;
+  }
+}
+
+.table-filters-in-out-select-close {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  font-family: SF Pro Display, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+
+  color: #5E7793;
+  cursor: pointer;
+
+  svg {
+    width: 15px;
+    height: 15px;
+    margin-left: 4px;
+
+    path {
+      fill: #5E7793;
+    }
+  }
+}
+
+.table-filters-in-out-select-item-selected {
+  color: #015EF5;
+  height: 32px;
+  width: 204px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  cursor: pointer;
+
+  svg {
+    margin-left: 12px;
+  }
+
+  &:hover {
+    background: #DEE4FF;
+  }
+}
+
+.table-filters-calendar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: SF Pro Display, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.72px;
+  text-align: left;
+  color: #002CFB;
+  cursor: pointer;
+
+  svg {
+    cursor: pointer;
+
+    &:hover {
+      path {
+        fill: #002CFB;
+      }
+    }
+  }
+}
