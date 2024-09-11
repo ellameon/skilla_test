@@ -47,15 +47,15 @@ export const TableHeader = (
 
 
   return (
-    <thead>
-    <tr className={"table-header"}>
+    <div>
+    <div className={"table-header"}>
       {cells.map(el => (
-        <th key={el.title} style={{width: `${el.width}px`}} onClick={el.onClick} className="table-header-element">
+        <div key={el.title} style={{width: `${el.width}px`}} onClick={el.onClick} className="table-header-element">
           {el.title}
           {el.icon}
-        </th>
+        </div>
       ))}
-    </tr>
-    </thead>
+    </div>
+    </div>
   )
 }

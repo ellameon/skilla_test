@@ -10,7 +10,7 @@ export const useGetCallRecord = (enabled: boolean, record: string, partnership_i
     return URL.createObjectURL(blob)
   };
 
-  const { data: mp3Url, isLoading, isError, error } = useQuery(
+  const {data: mp3Url, isLoading, isError, error} = useQuery(
     DEFAULT_QN,
     fetchCallRecord,
     {
