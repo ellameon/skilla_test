@@ -1,0 +1,23 @@
+.table-header-element {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: SF Pro Display, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.72px;
+  text-align: left;
+  color: #5E7793;
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.table-header {
+  display: flex;
+  width: 100%;
+  padding: 0 40px;
+  height: 65px;
+  align-items: center;
+}

@@ -1,10 +1,17 @@
 import React from 'react';
+import "./App.scss"
+import { TableComponent } from "./view/table/Table";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 function App() {
-  return (
-    <div className="App">
+  const queryClient = new QueryClient();
 
-    </div>
+  return (
+    <QueryClientProvider client={queryClient}>
+      <div className="App">
+        <TableComponent/>
+      </div>
+    </QueryClientProvider>
   );
 }
 
